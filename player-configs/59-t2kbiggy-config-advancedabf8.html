@@ -1,0 +1,178 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-gb" lang="en-gb" >
+ 
+<!-- Mirrored from quake2lithium.com/player-configs/59-t2kbiggy-config-advanced?tmpl=component&print=1&page= by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 02 Apr 2018 17:29:20 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head>
+  <meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7" />
+  <base  />
+  <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+  <meta name="robots" content="noindex, nofollow" />
+  <meta name="keywords" content="quake, quake2, quake 2, quake lithium, quake 2 lithium, quake 2 lithium II, quake II lithium II, lithium 2" />
+  <meta name="title" content="[T2K]Biggy Config (Advanced)" />
+  <meta name="author" content="Administrator" />
+  <meta name="description" content="Quake 2 Lithium II fansite and community." />
+  <meta name="generator" content="Joomla! 1.5 - Open Source Content Management" />
+  <title>[T2K]Biggy Config (Advanced)</title>
+  <link href="https://quake2lithium.com/templates/quake/favicon.ico" rel="shortcut icon" type="image/x-icon" />
+  <script type="text/javascript" src="https://quake2lithium.com/media/system/js/mootools.js"></script>
+  <script type="text/javascript" src="https://quake2lithium.com/media/system/js/caption.js"></script>
+  <link type="text/css" rel="stylesheet" href="https://quake2lithium.com/plugins/content/codecitation/styles/shCore.css"/>
+<link type="text/css" rel="stylesheet" href="https://quake2lithium.com/plugins/content/codecitation/styles/shThemeRDark.css"/>
+<script type="text/javascript" src="https://quake2lithium.com/plugins/content/codecitation/scripts/shCore.js"></script>
+  <script type="text/javascript" src="https://quake2lithium.com/plugins/content/codecitation/scripts/shBrushPlain.js"></script>
+  <link href="https://quake2lithium.com/plugins/content/mos_jdownloads_file/css/mos_jdownloads_file.css" rel="stylesheet" type="text/css"/>
+  <link href="https://quake2lithium.com/plugins/content/mos_jdownloads_file/lightbox/lightbox.css" rel="stylesheet" type="text/css" media="screen"/>
+
+  <link rel="stylesheet" href="https://quake2lithium.com/templates/system/css/system.css" type="text/css" />
+  <link rel="stylesheet" href="https://quake2lithium.com/templates/system/css/general.css" type="text/css" />
+
+ </head>
+<body class="contentpane">
+ 
+         <script type="text/javascript" src="https://quake2lithium.com/plugins/content/mos_jdownloads_file/lightbox/lightbox.js"></script> 
+        <div class="art-Post">
+    <div class="art-Post-tl"></div>
+    <div class="art-Post-tr"></div>
+    <div class="art-Post-bl"></div>
+    <div class="art-Post-br"></div>
+    <div class="art-Post-tc"></div>
+    <div class="art-Post-bc"></div>
+    <div class="art-Post-cl"></div>
+    <div class="art-Post-cr"></div>
+    <div class="art-Post-cc"></div>
+    <div class="art-Post-body">
+<div class="art-Post-inner">
+ <h2 class="art-PostHeader"> 
+[T2K]Biggy Config (Advanced)
+</h2>
+
+<div class="art-PostMetadataHeader">
+<div class="art-PostHeaderIcons art-metadata-icons">
+<a href="#" onclick="window.print();return false;"><img src="https://quake2lithium.com/templates/quake/images/printButton.png" alt="Print"  /></a>
+</div>
+</div>
+<div class="art-PostContent">
+<div class="art-article"><p><script type="text/javascript">
+	SyntaxHighlighter.config.clipboardSwf = "https://quake2lithium.com/plugins/content/codecitation/scripts/clipboard.swf";
+	SyntaxHighlighter.defaults["auto-links"] = false;
+	SyntaxHighlighter.defaults["collapse"] = false;
+	SyntaxHighlighter.defaults["gutter"] = true;
+	SyntaxHighlighter.defaults["smart-tabs"] = true;
+	SyntaxHighlighter.defaults["tab-size"] = 4;
+	SyntaxHighlighter.defaults["toolbar"] = true;
+	SyntaxHighlighter.defaults["wrap-lines"] = true;	
+	SyntaxHighlighter.all();
+</script><div style="overflow: hidden; display: block; height: auto; width: 100%;"><pre class="brush: text; gutter: false;">
+//************************************************** *****
+//* [T2K]Biggy.cfg *
+//* July 19th, 2000 *
+//************************************************** *****
+set name "Biggy=GoM="
+set crosshair "1"
+bind r "drop rune"
+bind q "longue"
+bind e "courte"
+bind F2 "say NICE SHOT !!!"
+bind F3 "say GG!!!"
+bind F4 "say eheheh!!!"
+bind F5 "say cya later"
+bind F6 "say WAZZUP???"
+bind f8 "say LOL!"
+//**Aliases**
+//**Choisi la meilleure arme longue-distance**
+alias longue "msg3;longue1;msg1;echo Arme longue-distance !!!!"
+alias longue1 "wait;use grenade launcher;wait;use railgun;wait;use rocket launcher"
+//**Choisi la meilleure arme courte-distance**
+alias courte "msg3;courte1;msg1;echo Arme courte-distance !!!!"
+alias courte1 "wait; use blaster;wait; use shotgun;wait;use super shotgun;wait;use machinegun;wait;use chaingun;wait;use hyperblaster;wait;use railgun"
+//**Choisi la meilleure arme tout-court**
+alias fg1 "use Shotgun;use Machinegun;use Super Shotgun;use Chaingun"
+alias fg2 "use Hyperblaster;use Railgun;use Rocket Launcher"
+alias +fg "use blaster"
+alias -fg "msg3; fg1; fg2; msg1"
+alias +ninjasniper "fov 35;wait;wait;sensitivity 5"
+alias -ninjasniper "wait;fov 120; sensitivity 7.5"
+//**Binding for DeathMon Menu**
+bind b "dmsmenu"
+//**Binding for DeathMon Stats**
+bind n "dmsstats"
+//**Binding for DeathMon Stat Position**
+bind m "dmsstatpos"
+set hand "2"
+//**Mouse Bind and Settings**
+bind MOUSE1 "+attack"
+bind MOUSE2 "+hook"
+bind MOUSE3 "+ninjasniper"
+//**FPS improve**
+set cl_maxfps "100"
+set cl_particles "1"
+set gl_dynamic "0"
+set gl_polyblend "0"
+set gl_skymip "4"
+set gl_playermip "0"
+set gl_flashblend "0"
+set gl_ext_swapinterval "1"
+set gl_swapinterval "1"
+//**High Visual Quality**
+set gl_round_down "0"
+set gl_triplebuffer "1"
+set gl_picmip "0"
+set gl_bitdepth "0"
+set gl_3dlabs_broken "1"
+set gl_swapinterval "1"
+set gl_ext_compiled_vertex_array "1"
+set gl_ext_pointparameters "1"
+set gl_ext_multitexture "1"
+set gl_ext_swapinterval "1"
+set gl_vertex_arrays "0"
+set gl_texturesolidmode "default"
+set gl_texturealphamode "default"
+set gl_texturemode "GL_LINEAR_MIPMAP_NEAREST"
+set gl_modulate "6"
+set gl_shadows "1"
+set gl_particle_att_c "0.01"
+set gl_particle_att_b "0.0"
+set gl_particle_att_a "0.01"
+set gl_particle_size "4"
+set gl_particle_max_size "4"
+set gl_particle_min_size "1"
+set gl_finish "0"
+set gl_ext_palettedtexture "0"
+set gl_mode "4"
+set gl_driver "opengl32"
+set g_select_empty "0"
+set in_joystick "0"
+set in_mouse "1"
+set cl_vwep "1"
+set gender_auto "1"
+set gender "female"
+set fov "120"
+set rate "10000"
+set cl_bob "0"
+set cl_run "1"
+set v_centerspeed "0"
+set v_kickroll "0"
+set v_kicktime "0"
+set run_pitch "0"
+set run_roll "0"
+set bob_pitch "0"
+set bob_roll "0"
+set bob_up "0"
+set intensity "3"
+set vid_gamma ".8"
+</pre></div></p></div><span class="article_separator">&nbsp;</span>
+</div>
+<div class="cleared"></div>
+
+</div>
+
+		<div class="cleared"></div>
+    </div>
+</div>
+
+
+</body>
+
+<!-- Mirrored from quake2lithium.com/player-configs/59-t2kbiggy-config-advanced?tmpl=component&print=1&page= by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 02 Apr 2018 17:29:20 GMT -->
+</html>

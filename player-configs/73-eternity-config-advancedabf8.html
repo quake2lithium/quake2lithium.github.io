@@ -1,0 +1,510 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-gb" lang="en-gb" >
+ 
+<!-- Mirrored from quake2lithium.com/player-configs/73-eternity-config-advanced?tmpl=component&print=1&page= by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 02 Apr 2018 17:29:20 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head>
+  <meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7" />
+  <base  />
+  <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+  <meta name="robots" content="noindex, nofollow" />
+  <meta name="keywords" content="quake, quake2, quake 2, quake lithium, quake 2 lithium, quake 2 lithium II, quake II lithium II, lithium 2" />
+  <meta name="title" content="Eternity Config (Advanced)" />
+  <meta name="author" content="Administrator" />
+  <meta name="description" content="Quake 2 Lithium II fansite and community." />
+  <meta name="generator" content="Joomla! 1.5 - Open Source Content Management" />
+  <title>Eternity Config (Advanced)</title>
+  <link href="https://quake2lithium.com/templates/quake/favicon.ico" rel="shortcut icon" type="image/x-icon" />
+  <script type="text/javascript" src="https://quake2lithium.com/media/system/js/mootools.js"></script>
+  <script type="text/javascript" src="https://quake2lithium.com/media/system/js/caption.js"></script>
+  <link type="text/css" rel="stylesheet" href="https://quake2lithium.com/plugins/content/codecitation/styles/shCore.css"/>
+<link type="text/css" rel="stylesheet" href="https://quake2lithium.com/plugins/content/codecitation/styles/shThemeRDark.css"/>
+<script type="text/javascript" src="https://quake2lithium.com/plugins/content/codecitation/scripts/shCore.js"></script>
+  <script type="text/javascript" src="https://quake2lithium.com/plugins/content/codecitation/scripts/shBrushPlain.js"></script>
+  <link href="https://quake2lithium.com/plugins/content/mos_jdownloads_file/css/mos_jdownloads_file.css" rel="stylesheet" type="text/css"/>
+  <link href="https://quake2lithium.com/plugins/content/mos_jdownloads_file/lightbox/lightbox.css" rel="stylesheet" type="text/css" media="screen"/>
+
+  <link rel="stylesheet" href="https://quake2lithium.com/templates/system/css/system.css" type="text/css" />
+  <link rel="stylesheet" href="https://quake2lithium.com/templates/system/css/general.css" type="text/css" />
+
+ </head>
+<body class="contentpane">
+ 
+         <script type="text/javascript" src="https://quake2lithium.com/plugins/content/mos_jdownloads_file/lightbox/lightbox.js"></script> 
+        <div class="art-Post">
+    <div class="art-Post-tl"></div>
+    <div class="art-Post-tr"></div>
+    <div class="art-Post-bl"></div>
+    <div class="art-Post-br"></div>
+    <div class="art-Post-tc"></div>
+    <div class="art-Post-bc"></div>
+    <div class="art-Post-cl"></div>
+    <div class="art-Post-cr"></div>
+    <div class="art-Post-cc"></div>
+    <div class="art-Post-body">
+<div class="art-Post-inner">
+ <h2 class="art-PostHeader"> 
+Eternity Config (Advanced)
+</h2>
+
+<div class="art-PostMetadataHeader">
+<div class="art-PostHeaderIcons art-metadata-icons">
+<a href="#" onclick="window.print();return false;"><img src="https://quake2lithium.com/templates/quake/images/printButton.png" alt="Print"  /></a>
+</div>
+</div>
+<div class="art-PostContent">
+<div class="art-article"><p><script type="text/javascript">
+	SyntaxHighlighter.config.clipboardSwf = "https://quake2lithium.com/plugins/content/codecitation/scripts/clipboard.swf";
+	SyntaxHighlighter.defaults["auto-links"] = false;
+	SyntaxHighlighter.defaults["collapse"] = false;
+	SyntaxHighlighter.defaults["gutter"] = true;
+	SyntaxHighlighter.defaults["smart-tabs"] = true;
+	SyntaxHighlighter.defaults["tab-size"] = 4;
+	SyntaxHighlighter.defaults["toolbar"] = true;
+	SyntaxHighlighter.defaults["wrap-lines"] = true;	
+	SyntaxHighlighter.all();
+</script><div style="overflow: hidden; display: block; height: auto; width: 100%;"><pre class="brush: plain; gutter: false;">
+// ...::: Eternity's Config :::...
+// sets the renderer to use 'ref_r1gl.dll'
+set vid_ref "r1gl"
+
+
+//====================================================================================
+
+
+// configuration setup with the WASD key setup
+unbindall
+//------------------------------------------------------------
+
+// necessary keys from config.cfg
+bind ENTER "invuse"
+bind ESCAPE "togglemenu"
+bind TAB "inven"
+bind PAUSE "pause"
+bind ~ "toggleconsole"
+bind [ "invprev"
+bind ] "invnext"
+bind ` "toggleconsole"
+bind F1 "cmd help"
+bind F10 "quit"
+bind F12 "screenshot"
+//------------------------------------------------------------
+
+// A neat sniper alias for zooming in on people
+alias zoom_level1 "fov 120; sensitivity 12;  echo fov = 120; bind ALT zoom_level2"
+alias zoom_level2 "fov 60;  sensitivity 6;  echo fov = 60;  bind ALT zoom_level1"
+//------------------------------------------------------------
+
+// dropping binds
+alias bigwait "wait; wait"
+
+alias dropRG       "say_team [‹‹] [ %N ] [ RG DROP ]  [ $$loc_here ] [‹‹];             wave 4; drop Railgun;           drop SLUGS"
+alias dropHB       "say_team [‹‹] [ %N ] [ BFG/HB DROP ]  [ $$loc_here ] [‹‹];         wave 4; drop Hyperblaster;      bigwait;        drop BFG10K;  bigwait;        drop CELLS;  bigwait;       drop CELLS;  bigwait;  drop CELLS"
+alias dropRL       "say_team [‹‹] [ %N ] [ RL DROP ]  [ $$loc_here ] [‹‹];             wave 4; drop Rocket Launcher;   drop ROCKETS;   bigwait;      drop ROCKETS"
+alias dropCG       "say_team [‹‹] [ %N ] [ CHAIN DROP ]  [ $$loc_here ] [‹‹];          wave 4; drop Chaingun;          drop BULLETS;   bigwait;      drop BULLETS;   bigwait;     drop BULLETS"
+alias dropMG       "say_team [‹‹] [ %N ] [ MG DROP ]  [ $$loc_here ] [‹‹];             wave 4; drop Machinegun;        drop BULLETS"
+alias dropSSG      "say_team [‹‹] [ %N ] [ SSG DROP ]  [ $$loc_here ] [‹‹];            wave 4; drop Super Shotgun;     drop SHELLS;    bigwait;      drop SHELLS"
+alias dPS          "say_team [‹‹] [ %N ] [ POWER SHIELD DROP ]  [ $$loc_here ] [‹‹];   wave 4; drop Power Shield;      drop CELLS;     bigwait;      drop CELLS;     bigwait;     drop CELLS;    bigwait;     drop CELLS"
+alias dropNades    "say_team [‹‹] [ %N ] [ GL DROP ]  [ $$loc_here ] [‹‹];             wave 4; drop Grenade Launcher;  drop GRENADES;  bigwait;      drop GRENADES"
+alias dropRox      "say_team [‹‹] [ %N ] [ ROCKET DROP ]  [ $$loc_here ] [‹‹];         wave 4; drop ROCKETS"
+alias dropShells   "say_team [‹‹] [ %N ] [ SHELL DROP ]  [ $$loc_here ] [‹‹];          wave 4; drop SHELLS"
+alias dropBullets  "say_team [‹‹] [ %N ] [ BULLET DROP ]  [ $$loc_here ] [‹‹];         wave 4; drop BULLETS"
+alias dropCells    "say_team [‹‹] [ %N ] [ CELL DROP ]  [ $$loc_here ] [‹‹];           wave 4; drop CELLS"
+alias dropSlugs    "say_team [‹‹] [ %N ] [ SLUG DROP ]  [ $$loc_here ] [‹‹];           wave 4; drop SLUGS"
+
+//------------------------------------------------------------
+// weapon use keys
+alias useBL "use Blaster; crosshair 10"
+alias useSG "use Shotgun; crosshair 8"
+alias useSSG "use Super Shotgun; crosshair 8"
+alias useMG "use Machinegun; crosshair 8"
+alias useCG "use Chaingun; crosshair 8"
+alias useGL "use Grenade Launcher; crosshair 12"
+alias useGR "use Grenades; crosshair 12"
+alias useRL "use Rocket Launcher; crosshair 10"
+alias useHB "use Hyperblaster; crosshair 5"
+alias useRG "use Railgun; crosshair 169"
+alias useBFG "use BFG10K; crosshair 3"
+//------------------------------------------------------------
+
+// movement keys
+bind w "+forward"
+bind a "+moveleft"
+bind s "+back"
+bind d "+moveright"
+bind SHIFT "+moveup"
+bind CTRL "+movedown"
+//------------------------------------------------------------
+
+// mouse controls
+bind MWHEELUP "keyRG"
+bind MWHEELDOWN "keyRL"
+bind MOUSE1 "+attack"
+// hooking
+alias +flphk "hook"
+alias -flphk "unhook"
+bind mouse2 "+flphk"
+//------------------------------------------------------------
+
+// Hopefully, you can follow what I do. The $modif string is expanded to the value
+// of modif (which can be 0, 1, or 2). It then goes to that alias, which is either
+// a weapon use, a weapon drop, or an ammo drop. Pressing the "c" key indexes
+// the modif var.
+
+set modif "0"
+
+alias keyBL_0 "useBL"
+alias keyBL_1 "useBL"
+alias keyBL_2 "useBL"
+alias keyBL "keyBL_$modif"
+
+alias keySG_0 "useSG"
+alias keySG_1 "dropSSG"
+alias keySG_2 "dropShells"
+alias keySG "keySG_$modif"
+
+alias keySSG_0 "useSSG"
+alias keySSG_1 "dropSSG"
+alias keySSG_2 "dropShells"
+alias keySSG "keySSG_$modif"
+
+alias keyMG_0 "useMG"
+alias keyMG_1 "dropMG"
+alias keyMG_2 "dropBullets"
+alias keyMG "keyMG_$modif"
+
+alias keyCG_0 "useCG"
+alias keyCG_1 "dropCG"
+alias keyCG_2 "dropBullets"
+alias keyCG "keyCG_$modif"
+
+alias keyGL_0 "useGL"
+alias keyGL_1 "dropNades"
+alias keyGL_2 "dropNades"
+alias keyGL "keyGL_$modif"
+
+alias keyRL_0 "useRL"
+alias keyRL_1 "dropRL"
+alias keyRL_2 "dropRox"
+alias keyRL "keyRL_$modif"
+
+alias keyHB_0 "useHB"
+alias keyHB_1 "dropHB"
+alias keyHB_2 "dropCells"
+alias keyHB "keyHB_$modif"
+
+alias keyRG_0 "useRG"
+alias keyRG_1 "dropRG"
+alias keyRG_2 "dropSlugs"
+alias keyRG "keyRG_$modif"
+
+alias keyBFG_0 "useBFG"
+alias keyBFG_1 "dropHB"
+alias keyBFG_2 "dropCells"
+alias keyBFG "keyBFG_$modif"
+
+alias smod1 "set modif 1; bind c smod2; echo Dropping weapons"
+alias smod2 "set modif 2; bind c smod3; echo Dropping ammo"
+alias smod3 "set modif 0; bind c smod1; echo Using stuff"
+//------------------------------------------------------------
+
+// basic number keys
+bind 1 "keyBL"
+bind 2 "keySG"
+bind 3 "keySSG"
+bind 4 "keyMG"
+bind 5 "keyCG"
+bind 6 "keyGL"
+bind 7 "keyRL"
+bind 8 "keyHB"
+bind 9 "keyRG"
+bind 0 "keyBFG"
+
+// free keys
+//   i j n o p / \ - = CTRL PGDN END F6 F7 F8
+bind b "say_team [‹‹] [ STATUSžŸ%HžŸ%A ] [ @ $$loc_here ] [‹‹]"
+bind c "smod1"
+bind e "keyHB"
+bind f "keyGL"
+bind g "keyBFG"
+bind h "say_team [ˆ‰] [ NEED GUARD ] [ $$loc_here ] [ˆ‰]"
+bind k "say_team [‹‹] [ þarmorþ ] [+20] [ $$loc_here ] [‹‹]; play armor20.wav"
+bind l "say_team [‹‹] [ þweaponþ ] [+30] [ $$loc_here ] [‹‹]; play weapon30.wav"
+bind m "say_team [‹‹] [ Need AMMO for ] [ %W ] [ @ $$loc_here ] [‹‹]"
+bind q "keyCG"
+bind r "say_team [‹‹] [ Quad Weapon/Ammo needed! ] [ $$loc_here ] [‹‹]; wave 3"
+bind t "say_team €$$loc_here‚ SECURED"
+bind u "say_team €‚ [ NMY QUAD ]  [ $$loc_there ] €‚    "
+bind v "say_team [ˆ‰] [ WEAK NMY ]  [ $$loc_there ] [ˆ‰]"
+bind x "say_team [ˆ‰] [ NMY ]  [ $$loc_there ] [‰ˆ]"
+bind y "say_team €$$loc_here‚ LOST"
+bind z "useGR"
+// drops for commonly-needed weapons
+bind UPARROW "dropRG"
+bind RIGHTARROW "dropSSG"
+bind DOWNARROW "dropRL"
+bind LEFTARROW "dropCG"
+
+bind HOME "exec scfg/quadtimer.cfg"
+bind PGUP "say_team [ˆ‰] [ GET QUAD NOW!!! ] [ˆ‰]; say_team [ˆ‰] [ GET QUAD NOW!!! ] [ˆ‰]"
+
+// talking
+bind . "messagemode"
+bind , "messagemode2"
+// spam
+bind INS "say =D"
+bind DEL "say xD"
+// misc
+bind ALT "zoom_level2"
+bind SPACE "invuse"
+
+// function keys
+bind F2 "say_team [ AFFIRMATIVE! ]"
+bind F3 "say_team [ NEGATIVE! ]"
+bind F4 "say_team [ˆ‰] [ NEED HELP FAST! ]  [ $$loc_here ] [ˆ‰]"
+bind F5 "wave 2"
+bind F6 "drop rune"
+bind F7 "drop tech"
+
+
+//====================================================================================
+
+
+// FLP [clan Feel Lucky Punk] (Firehawk's server)
+set adr0 "hawk.westcoastflp.com"
+// tastyspleen.net::dm [deathmatch]
+set adr1 "74.54.186.226:27916"
+// FLP [clan Feel Lucky Punk] (Deadly's server)
+set adr2 "east.westcoastflp.com"
+// FLP [clan Feel Lucky Punk] (Voice's server)
+set adr3 "westcoastflp.com"
+// tastyspleen.net::irtdm [Immortal Reaper's Team Deathmatch]
+set adr4 "74.54.186.229:27910"
+// FLP [clan Feel Lucky Punk] (Livewire's server)
+set adr5 "livewire.westcoastflp.com"
+// backshooter's server
+set adr6 "q2.backshooters.com:27915"
+// &lt;empty&gt;
+//set adr7 ""
+// &lt;empty&gt;
+set adr7 ""
+// d3s's server
+set adr8 "q2.d3s.us"
+
+
+//====================================================================================
+
+
+alias _flp "exec scfg/FLP_spam.cfg"
+alias _luck "say ‡  ‡  ‡    FEEL LUCKY PUNK?   ‡  ‡  ‡; say ‡  ‡  ‡   WELL, DO YA PUNK?   ‡  ‡  ‡; say ‡  ‡  ‡     WELL, DO YOU?     ‡  ‡  ‡"
+alias _xh "say Need crosshairs?; say Go to bullseyecrosshairs.com !"
+alias _srv "say FLP lithium servers @ westcoastflp.com q2.d3s.us hawk.westcoastflp.com livewire.westcoastflp.com"
+alias _xD "exec scfg/xD.cfg"
+alias _nuke "say OUCH!!! I didn't think nuclear missiles existed in Quake II!!!"
+alias _cry "say Awwwwwww. Do you need Mommy to wipe those teary little eyes?"
+alias _cry2 "say Awwwwwww. Do you need a band-aid for that little boo-boo?"
+alias _cry3 "say Somebody call the WWWAAAMMMMBULANCE!!! Somebody call the WWWAAAMMMMBULANCE!!!"
+alias _cry4 "say Poooooooorrrr guy.... Do you need Mommy to come kiss you?"
+alias _cry5 "say Waaaaaaaaaah! Waaaaaaaaaaah! Waaaaaaaaaah! I'm getting OWNED!!! *RAGEQUITS*"
+alias _rage "say Attaboy! Push that fist straight through that monitor!"
+alias _rage2 "say Yep! Time to yank that network plug!"
+alias _rage3 "say Is it RAGE QUIT time yet?"
+alias _rage4 "say Fling that mouse across the room and let out a yell of fury!"
+alias _rofl "exec scfg/rofl.cfg"
+alias _whine "exec scfg/whineometer.cfg"
+alias _icq "exec scfg/icq.cfg"
+
+
+//====================================================================================
+
+
+// sets networking settings
+// turns on client-side prediction
+set cl_predict "2"
+// smooths steps
+set cl_smoothsteps "3"
+// turns on the netgraph
+set netgraph "1"
+// desynchronizes network and rendering code
+set cl_async "1"
+// enables the sending of packets immediately when you fire a weapon/jump
+set cl_instantpacket "1"
+// how many packets/sec to send to the server
+// 1000/5  = 200
+// 1000/6  = 167
+// 1000/7  = 143
+// 1000/8  = 125
+// 1000/9  = 112
+// 1000/10 = 100
+// 1000/11 = 91
+// 1000/12 = 84
+// 1000/13 = 77
+// 1000/14 = 72
+// 1000/15 = 67
+// 1000/16 = 63
+// 1000/17 = 59
+// 1000/18 = 56
+// 1000/19 = 53
+// 1000/20 = 50
+// 1000/25 = 40
+// 
+// 
+// other useful cl_maxfps values : 22, 24, 33, 66, 90
+set cl_maxfps "90"
+// max rendering rate, in frames/sec
+set r_maxfps "240"
+// draw FPS counter
+set cl_drawfps "1"
+// data rate
+set rate "4000"
+// sets the FOV
+set fov "120"
+// turns on directinput mouse
+set m_directinput "2"
+// sensitivity
+set sensitivity "12"
+
+// turn on running
+set cl_run "1"
+
+// capture the mouse
+set in_mouse "1"
+
+// mouse system
+set lookstrafe "0"
+set lookspring "0"
+set freelook "1"
+set m_xpfix "1"
+set m_fixaccel "1"
+set m_filter "1"
+
+// stops the annoying weaving
+set bob_pitch "0"
+set bob_roll "0"
+set bob_up "0"
+set run_pitch "0"
+set run_roll "0"
+set v_kickroll "0"
+set v_kicktime "0"
+set cl_bob "0"
+set v_centerspeed "0"
+
+// brighten the map
+set gl_modulate "5"
+
+// enables weapon switching to empty weapons
+set g_select_empty "1"
+
+// disable auto-recording
+set cl_autorecord "1"
+
+// enables downloading
+set allow_download "1"
+set allow_download_players "0"
+set allow_download_models "1"
+set allow_download_sounds "1"
+set allow_download_maps "1"
+set allow_download_textures "1"
+set allow_download_pics "1"
+set allow_download_others "1"
+
+// allows ALT+TAB
+set win_noalttab "0"
+
+// sets my model/skin
+set skin "male/flp2"
+// sets my name
+set name "Eternity{FLP}"
+// sets my gender
+set gender "male"
+
+
+//====================================================================================
+
+
+// config file containing settings for r1gl
+set gl_ext_texture_filter_anisotropic "0"
+set gl_ext_max_anisotropy "2"
+set gl_ext_multisample "0"
+set gl_ext_samples "2"
+set gl_ext_nv_multisample_filter_hint "fastest"
+set gl_ext_texture_non_power_of_two "0"
+set gl_ext_occlusion_query "0"
+set gl_zfar "8192"
+set gl_hudscale "1"
+set gl_noscrap "1"
+set gl_overbrights "0"
+set gl_coloredlightmaps "0"
+set gl_texture_formats "png jpg tga"
+set gl_pic_formats "png jpg tga"
+set gl_dlight_falloff "0"
+set gl_defertext "1"
+set gl_swapinterval "0"
+set vid_topmost "0"
+set vid_forcedrefresh "0"
+set vid_optimalrefresh "0"
+set vid_fullscreen "0"
+// change these?
+set gl_doublelight_entities "1"
+
+// more settings...
+set gl_flashblend "0"
+set gl_polyblend "0"
+//set gl_bitdepth "32"
+set gl_particle_size "10"
+set gl_particle_max_size "10"
+set gl_particle_min_size "2"
+//set gl_shadows "0"
+//set gl_ext_swapinterval "0"
+
+// _MUST_ BE 0!!!
+// If not, framerate goes to 4 FPS on my laptop =o .
+set gl_dynamic "0"
+
+
+//====================================================================================
+
+
+// finished--informs user that the config file has executed appropriately
+echo "startup.cfg has executed..."
+// end of file
+
+
+
+//####################################################################################
+//### Whineometer.cfg ################################################################
+//####################################################################################
+
+
+
+// The Whine-O-Meter config file   :P
+
+alias whinewait "wait; wait; wait; wait; wait; wait; wait; wait; wait; wait; wait; wait; wait"
+
+
+whinewait
+whinewait
+whinewait
+
+
+say "                   \-- Whine-O-Meter - ACTIVATED! ,-/                                        "
+say " Little whining ->  \                           ,:'/  &lt;- Turbo bitching!                      "
+say "                     \                        ,#' /                                          "
+say "                      \______________________#'__/          YOU *REALLY* PEGGED THE LIMIT!!! "
+
+// EOF
+</pre></div></p></div><span class="article_separator">&nbsp;</span>
+</div>
+<div class="cleared"></div>
+
+</div>
+
+		<div class="cleared"></div>
+    </div>
+</div>
+
+
+</body>
+
+<!-- Mirrored from quake2lithium.com/player-configs/73-eternity-config-advanced?tmpl=component&print=1&page= by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 02 Apr 2018 17:29:20 GMT -->
+</html>

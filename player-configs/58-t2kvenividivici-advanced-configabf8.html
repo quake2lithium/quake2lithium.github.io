@@ -1,0 +1,175 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-gb" lang="en-gb" >
+ 
+<!-- Mirrored from quake2lithium.com/player-configs/58-t2kvenividivici-advanced-config?tmpl=component&print=1&page= by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 02 Apr 2018 17:29:20 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head>
+  <meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7" />
+  <base  />
+  <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+  <meta name="robots" content="noindex, nofollow" />
+  <meta name="keywords" content="quake, quake2, quake 2, quake lithium, quake 2 lithium, quake 2 lithium II, quake II lithium II, lithium 2" />
+  <meta name="title" content="[T2K]VeniVidiVici Config (Advanced)" />
+  <meta name="author" content="Administrator" />
+  <meta name="description" content="Quake 2 Lithium II fansite and community." />
+  <meta name="generator" content="Joomla! 1.5 - Open Source Content Management" />
+  <title>[T2K]VeniVidiVici Config (Advanced)</title>
+  <link href="https://quake2lithium.com/templates/quake/favicon.ico" rel="shortcut icon" type="image/x-icon" />
+  <script type="text/javascript" src="https://quake2lithium.com/media/system/js/mootools.js"></script>
+  <script type="text/javascript" src="https://quake2lithium.com/media/system/js/caption.js"></script>
+  <link type="text/css" rel="stylesheet" href="https://quake2lithium.com/plugins/content/codecitation/styles/shCore.css"/>
+<link type="text/css" rel="stylesheet" href="https://quake2lithium.com/plugins/content/codecitation/styles/shThemeRDark.css"/>
+<script type="text/javascript" src="https://quake2lithium.com/plugins/content/codecitation/scripts/shCore.js"></script>
+  <script type="text/javascript" src="https://quake2lithium.com/plugins/content/codecitation/scripts/shBrushPlain.js"></script>
+  <link href="https://quake2lithium.com/plugins/content/mos_jdownloads_file/css/mos_jdownloads_file.css" rel="stylesheet" type="text/css"/>
+  <link href="https://quake2lithium.com/plugins/content/mos_jdownloads_file/lightbox/lightbox.css" rel="stylesheet" type="text/css" media="screen"/>
+
+  <link rel="stylesheet" href="https://quake2lithium.com/templates/system/css/system.css" type="text/css" />
+  <link rel="stylesheet" href="https://quake2lithium.com/templates/system/css/general.css" type="text/css" />
+
+ </head>
+<body class="contentpane">
+ 
+         <script type="text/javascript" src="https://quake2lithium.com/plugins/content/mos_jdownloads_file/lightbox/lightbox.js"></script> 
+        <div class="art-Post">
+    <div class="art-Post-tl"></div>
+    <div class="art-Post-tr"></div>
+    <div class="art-Post-bl"></div>
+    <div class="art-Post-br"></div>
+    <div class="art-Post-tc"></div>
+    <div class="art-Post-bc"></div>
+    <div class="art-Post-cl"></div>
+    <div class="art-Post-cr"></div>
+    <div class="art-Post-cc"></div>
+    <div class="art-Post-body">
+<div class="art-Post-inner">
+ <h2 class="art-PostHeader"> 
+[T2K]VeniVidiVici Config (Advanced)
+</h2>
+
+<div class="art-PostMetadataHeader">
+<div class="art-PostHeaderIcons art-metadata-icons">
+<a href="#" onclick="window.print();return false;"><img src="https://quake2lithium.com/templates/quake/images/printButton.png" alt="Print"  /></a>
+</div>
+</div>
+<div class="art-PostContent">
+<div class="art-article"><p><script type="text/javascript">
+	SyntaxHighlighter.config.clipboardSwf = "https://quake2lithium.com/plugins/content/codecitation/scripts/clipboard.swf";
+	SyntaxHighlighter.defaults["auto-links"] = false;
+	SyntaxHighlighter.defaults["collapse"] = false;
+	SyntaxHighlighter.defaults["gutter"] = true;
+	SyntaxHighlighter.defaults["smart-tabs"] = true;
+	SyntaxHighlighter.defaults["tab-size"] = 4;
+	SyntaxHighlighter.defaults["toolbar"] = true;
+	SyntaxHighlighter.defaults["wrap-lines"] = true;	
+	SyntaxHighlighter.all();
+</script><div style="overflow: hidden; display: block; height: auto; width: 100%;"><pre class="brush: plain; gutter: false;">
+//************************************************** **********
+//[T2K]VeniVidiVici
+//************************************************** **********
+
+set name "VVV{FLP}"
+set skin "linfang/ctf_b"
+set m_filter "0"
+set sensitivity "9"
+set crosshair "1"
+bind F2 "menu"
+bind F3 "exec serverlist.cfg"
+bind F5 "exec clanFLP.cfg"
+bind F7 "exec DOOB.cfg"
+bind F8 "exec bullseye.cfg"
+bind F10 "exec bigsmile.cfg"
+bind F11 "exec tks.cfg"
+bind F12 "exec goodgame.cfg"
+bind kp_minus "exec negative.cfg"
+bind * "exec affirmative.cfg"
+bind i "exec ICQ.cfg"
+bind t "exec clanFLP.cfg"
+bind F9 "exec greetings.cfg"
+bind kp_pgdn "wave 1"
+bind kp_end "wave 3"
+bind kp_pgup "wave 4"
+bind kp_home "wave 2"
+alias niname_on "name {FLP}AFK;echo {FLP}AFK;bind v niname_off"
+alias niname_off "name VVV{FLP};echo VVV{FLP};wait;bind v niname_on"
+bind v "niname_on"
+alias graph_on "set netgraph 1;echo Netgraph ON; bind n graph_compression"
+alias graph_compression "set netgraph 0;set timegraph 1;echo Timegraph ON; bind n graphs_off"
+alias graphs_off "set timegraph 0;echo Graphs OFF!; bind n graph_on"
+bind n "graph_on"
+bind MWHEELDOWN "weapprev"
+bind MWHEELUP "weapnext;use power shield"
+alias selsingle "use BFG10K;use Super Shotgun;use Railgun;wait;set crosshair 3"
+alias selrepeat "use Machinegun;use Hyperblaster;use Chaingun;wait;set crosshair 2"
+alias selexplosive "use Grenades;use Grenade Launcher;use Rocket Launcher;wait;set crosshair 1"
+bind RIGHTARROW "selrepeat"
+bind LEFTARROW "selsingle"
+bind UPARROW "selexplosive"
+bind MOUSE2 "+hook"
+bind u "drop rune;echo Dropped Rune!(right)"
+bind y "drop tech;echo Dropped Tech!(left)"
+bind c "chasecam"
+alias mutesound_on "set s_volume 0.00000;echo MUTE!;bind s mutesound_off"
+alias mutesound_off "set s_volume 1;echo MUTE OFF!;bind s mutesound_on"
+bind s "mutesound_on"
+set fov "120"
+set hand "2"
+set cl_bob "0"
+set v_centerspeed "0"
+set v_kickroll "0"
+set v_kicktime "0"
+set run_pitch "0"
+set run_roll "0"
+set bob_pitch "0"
+set bob_roll "0"
+set bob_up "0"
+set msg "1"
+set rate "15000"
+set gl_shadows "1"
+set intensity "3"
+set cl_maxfps "75"
+set r_maxfps "75"
+set vid_ref "r1gl"
+bind o "messagemode"
+bind p "messagemode2"
+bind PGDN "min"
+bind PGUP "zoom_140"
+alias zoom_140 "fov 140;echo fov140;bind PGUP zoom_130;bind PGDN min;alias zoom zoom_140"
+alias zoom_130 "fov 130;echo fov130;bind PGUP zoom_120;bind PGDN zoom_140;alias zoom zoom_130"
+alias zoom_120 "fov 120;echo fov120;bind PGUP zoom_110;bind PGDN zoom_130;alias zoom zoom_120"
+alias zoom_110 "fov 110;echo fov110;bind PGUP zoom_100;bind PGDN zoom_120;alias zoom zoom_110"
+alias zoom_100 "fov 100;echo fov100;bind PGUP zoom_90;bind PGDN zoom_110;alias zoom zoom_100"
+alias zoom_90 "fov 90;echo fov90;bind PGUP zoom_80;bind PGDN zoom_100;alias zoom zoom_90"
+alias zoom_80 "fov 80;echo fov80;bind PGUP zoom_70;bind PGDN zoom_90;alias zoom zoom_80"
+alias zoom_70 "fov 70;echo fov70;bind PGUP zoom_60;bind PGDN zoom_80;alias zoom zoom_70"
+alias zoom_60 "fov 60;echo fov60;bind PGUP zoom_50;bind PGDN zoom_70;alias zoom zoom_60"
+alias zoom_50 "fov 50;echo fov50;bind PGUP zoom_40;bind PGDN zoom_60;alias zoom zoom_50"
+alias zoom_40 "fov 40;echo fov40;bind PGUP max;bind PGDN zoom_50;alias zoom zoom_40"
+alias +invcyc "bind PGUP next;bind PGUP prev;alias uncyc invuse"
+alias min "echo Minimum zoom;unbind PGDN"
+alias max "echo Maximum zoom;unbind PGUP"
+
+alias +ninjaleft "fov 80;wait;sensitivity 7"
+alias -ninjaleft "zoom_120;sensitivity 9"
+bind m "+ninjaleft"
+alias +ninjaright "fov 45;wait;sensitivity 6"
+alias -ninjaright "zoom_120;sensitivity 9"
+bind l "+ninjaright"
+alias +ninjacenter "fov 160;wait;sensitivity 12"
+alias -ninjacenter "zoom_120;sensitivity 9"
+bind r "+ninjacenter"
+</pre></div></p></div><span class="article_separator">&nbsp;</span>
+</div>
+<div class="cleared"></div>
+
+</div>
+
+		<div class="cleared"></div>
+    </div>
+</div>
+
+
+</body>
+
+<!-- Mirrored from quake2lithium.com/player-configs/58-t2kvenividivici-advanced-config?tmpl=component&print=1&page= by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 02 Apr 2018 17:29:20 GMT -->
+</html>

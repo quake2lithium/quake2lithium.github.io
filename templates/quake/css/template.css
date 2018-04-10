@@ -24,6 +24,7 @@ body
 	height: 422px;
 	left: 0;
 	top: 0;
+	overflow-x: hidden;
 }
 
 #art-page-background-glare-image
